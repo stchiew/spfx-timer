@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "timer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/timer/TimerWebPart.js",
+          "manifest": "./src/webparts/timer/TimerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TimerWebPartStrings": "lib/webparts/timer/loc/{locale}.js"
+  }
+}
