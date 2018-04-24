@@ -1,7 +1,7 @@
 define([], function() {
   return {
-    "PropertyPaneDescription": "Description",
-    "BasicGroupName": "Group Name",
-    "DescriptionFieldLabel": "Description Field"
+    "PropertyPaneDescription": "Webpart by PandaSoft",
+    "BasicGroupName": "Countdown Configuration",
+    "DescriptionFieldLabel": "Type in the header"
   }
 });

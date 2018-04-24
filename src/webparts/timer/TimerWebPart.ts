@@ -10,13 +10,16 @@ import {
 import * as strings from 'TimerWebPartStrings';
 import Timer from './components/Timer';
 import { ITimerProps } from './components/ITimerProps';
-
+ 
 export interface ITimerWebPartProps {
   description: string;
 }
 
 export default class TimerWebPart extends BaseClientSideWebPart<ITimerWebPartProps> {
-
+  public constructor() {
+    super();
+    
+  }
   public render(): void {
     const element: React.ReactElement<ITimerProps > = React.createElement(
       Timer,
@@ -32,7 +35,12 @@ export default class TimerWebPart extends BaseClientSideWebPart<ITimerWebPartPro
     return Version.parse('1.0');
   }
 
+  private formatDateIso(date: Date): string {
+    return date.toISOString();
+ }
+ 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
+    
     return {
       pages: [
         {
