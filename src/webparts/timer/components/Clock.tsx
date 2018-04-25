@@ -28,7 +28,7 @@ export default class Clock extends React.Component<any,IClockstate> {
     }
 
     private getTimeUntil(deadline){
-        const time = Date.parse(deadline) - Date.now();
+         const time = Date.parse(deadline) - Date.now();
         const seconds = Math.floor((time/1000) % 60);
         const minutes = Math.floor((time/1000/60) % 60);
         const hours = Math.floor((time/(1000*60*60)) % 24);
@@ -38,6 +38,7 @@ export default class Clock extends React.Component<any,IClockstate> {
     }
 
     public render(){
+
         return(
             <div>
                 <div className={ styles.clockdiv } >
@@ -47,15 +48,15 @@ export default class Clock extends React.Component<any,IClockstate> {
                     </div>
                     <div>
                         <span>{this.leading0(this.state.ihours)} </span>
-                        <div className={ styles.smalltext}> xx hrs</div>
+                        <div className={ styles.smalltext}>hrs</div>
                     </div>
                     <div>
                         <span>{this.leading0(this.state.iminutes)} </span>
-                        <div className={ styles.smalltext}> min</div>
+                        <div className={ styles.smalltext}>min</div>
                     </div>
                     <div>
                         <span>{this.leading0(this.state.iseconds)} </span>
-                        <div className={ styles.smalltext}> sec</div>
+                        <div className={ styles.smalltext}>sec</div>
                     </div>
                 </div>
             </div>

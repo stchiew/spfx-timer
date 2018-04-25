@@ -18,9 +18,9 @@
     "group": { "default": "Other" },
     "title": { "default": "Timer" },
     "description": { "default": "Countdown timer for SPO" },
-    "officeFabricIconFontName": "Page",
+    "officeFabricIconFontName": "Recent",
     "properties": {
-      "description": "25 December, 2018"
+      "description": "Let the countdown begin!"
     }
   }]
 }

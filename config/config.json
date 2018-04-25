@@ -13,6 +13,7 @@
   },
   "externals": {},
   "localizedResources": {
-    "TimerWebPartStrings": "lib/webparts/timer/loc/{locale}.js"
+    "TimerWebPartStrings": "lib/webparts/timer/loc/{locale}.js",
+    "PropertyControlStrings": "./node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
   }
 }
