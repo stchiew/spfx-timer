@@ -11,7 +11,9 @@ export default class Timer extends React.Component<ITimerProps, {}> {
     
     if(this.props.idatetime==null) {
       odisplayValue = "2018-12-25";
-    } else {odisplayValue=this.props.idatetime.displayValue}
+    } else {
+      odisplayValue=this.props.idatetime.displayValue;
+    }
     return (
       <div className={ styles.timer }>
         <div className={ styles.container }>
