@@ -63,6 +63,14 @@ export default class TimerWebPart extends BaseClientSideWebPart<ITimerWebPartPro
                   key: 'dateTimeFieldId'
                 })
               ]
+            },
+            {
+              groupName: strings.InfoGroupName,
+              groupFields: [
+                PropertyPaneTextField('txtmessage', {
+                  label: strings.WebPartSerialNo
+                })
+              ]
             }
           ]
         }
