@@ -18,10 +18,10 @@ export default class Timer extends React.Component<ITimerProps, {}> {
       <div className={ styles.timer }>
         <div className={ styles.container }>
           <div className={ styles.row }>
-            <div className={ styles.column }>
+            
               <span className={ styles.title }>{escape(this.props.description)}</span>
               <Clock deadline={odisplayValue} />
-            </div>
+           
           </div>
         </div>
       </div>
